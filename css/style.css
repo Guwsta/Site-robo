@@ -133,6 +133,7 @@ body{
 }
 
 .box-inner{
+    background: linear-gradient(var(--color-grey-light),var(--color-black-gradient));
     border-radius: 7px;
     padding: 10px;
     border-radius: 7px;
@@ -141,4 +142,9 @@ body{
     height: auto;
     position: relative;
     overflow: visible;
+    transition: .5s;
+}
+
+.box-inner:hover{
+    scale: 1.05;
 }
