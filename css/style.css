@@ -46,7 +46,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     color: #fff;
     background-image: url(../Images/robo.jpg);
 }
@@ -60,6 +59,7 @@ body{
     position: fixed;
     background-color: var(--color-grey-dark);
     height: 70px;
+    z-index: 1;
 }
 
 .hero-menu{
