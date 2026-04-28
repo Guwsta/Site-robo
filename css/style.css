@@ -60,14 +60,13 @@ body{
 
 .hero-menu{
     display: flex;
-    align-items: center;
     font-size: 32px;
-    gap: 35px;
+    gap: 50px;
 }
 
 .hero-text{
     padding-top: 300px;
-    padding-left: 60px;
+    padding-left: 70px;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -101,7 +100,7 @@ body{
 
 .hero-text p{
     width: 80%;
-    margin-left: 10px;
+    text-align: justify;
     color: #fff;
     font-size: 18px;
 }
@@ -134,17 +133,11 @@ body{
     height: 100vh;
 }
 
-.container h2{
-    margin: 70px 30px;
-    text-align: end;
-}
-
 .box{
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
     margin-left: 100px;
     height: auto;  
     width: 700px;
@@ -153,21 +146,19 @@ body{
 
 .box h2{
     color: #fff;
-    font-size: 42px;
+    font-size: 47px;
     text-align: center;
+    margin: 70px 30px;
 }
 
 .box-inner{
     background: linear-gradient(var(--color-grey-light),var(--color-black-gradient));
     color: #fff;
-    border-radius: 7px;
+    text-align: justify;
     padding: 10px;
     border-radius: 7px;
     width: 80%;
     margin: 20px;
-    height: auto;
-    position: relative;
-    overflow: visible;
     transition: .5s;
 }
 
