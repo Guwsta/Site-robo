@@ -105,14 +105,14 @@ a:hover {
 .hero-text h2 {
     margin-bottom: 10px;
     color: #fff;
-    font-size: 42px;
+    font-size: 6vmin;
 }
 
 .hero-text p {
     width: 80%;
     text-align: justify;
     color: #fff;
-    font-size: 18px;
+    font-size: 2.4vmin;
 }
 
 .info {
@@ -128,7 +128,7 @@ a:hover {
 
 .info p {
     color: var(--color-grey-light);
-    font-size: 16px;
+    font-size: 2.4vmin;
     font-weight: 700;
     margin: 0 auto;
     display: flex;
@@ -149,12 +149,14 @@ a:hover {
     height: auto;
     width: 50%;
     border-radius: 7px;
+    gap: 20px;
 }
 
 .box h2 {
     color: #fff;
-    font-size: 45px;
+    font-size: 6vmin;
     text-align: center;
+    text-wrap: balance;
     margin: 70px 30px;
 }
 
@@ -166,12 +168,16 @@ a:hover {
     padding: 10px;
     border-radius: 7px;
     width: 80%;
-    margin: 1vh;
     transition: .5s;
 }
 
 .box-content h3 {
+    font-size: 3vmin;
     margin-bottom: 10px;
+}
+
+.box-content p{
+    font-size: 2.4vmin;
 }
 
 .box-content:hover {
