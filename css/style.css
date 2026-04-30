@@ -10,11 +10,9 @@
 }
 
 :root {
-    --color-black: #111;
-    --color-black-gradient: #01080e;
-    --color-grey-bright: #888;
     --color-grey-dark: #444;
-    --color-grey-light: #666;
+    --color-font-blue: #6C757D;
+    --background-color-orange: #FF8C42;
 }
 
 html {
@@ -22,16 +20,26 @@ html {
 }
 
 body {
+    background-color: #e8edef;
     font-family: "Playfair Display", serif;
     letter-spacing: 2px;
 }
 
 h1 {
-    color: #fff;
+    color: var(--color-font-blue);
 }
 
 h1:hover {
     cursor: pointer;
+}
+
+h2{
+    font-size: 6vmin;
+}
+
+p {
+    font-size: 2.4vmin;
+    line-height: 1.6;
 }
 
 ol,
@@ -40,7 +48,7 @@ ul {
 }
 
 a {
-    color: #fff;
+    color: var(--color-font-blue);
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
@@ -48,14 +56,10 @@ a {
 }
 
 a:hover {
-    color: var(--color-black-gradient);
+    color: #E9ECEF;
 }
 
-.container {
-    height: 100vh;
-}
-
-.hero-header {
+.header {
     width: 100%;
     padding-inline: 30px;
     display: flex;
@@ -67,77 +71,94 @@ a:hover {
     z-index: 1;
 }
 
-.hero-menu {
+.header ul {
     display: flex;
     font-size: 32x;
     gap: 50px;
 }
 
-.background {
+.hero{
+    height: 50vh;
+    background-color: #4A90E2;
+    color: #343A40;
     display: flex;
-    background-color: #333;
-    width: auto;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h2{
+    margin-top: 10vh;
+}
+
+.hero p{
+    margin-top: 1vh;
+    font-size: 2.4vmin;
+    width: 50%;
+}
+
+.container {
+    display: flex;
     height: 100vh;
 }
 
-.background img {
+.container img {
     height: 80%;
     width: 40%;
     border-radius: 10px;
     margin: 15vh 5vh;
     transition: .5s;
-    opacity: .5;
+    opacity: .7;
+    box-shadow: var(--color-grey-dark) 10px 10px 15px;
 }
 
-.background img:hover {
+.container img:hover {
     opacity: 1.1;
 }
 
-.hero-text {
-    padding-top: 20vh;
+.robo-text {
     padding-left: 5%;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    color:  var(--color-grey-dark);
 }
 
-.hero-text h2 {
-    margin-bottom: 10px;
-    color: #fff;
-    font-size: 6vmin;
+.robo-text h2 {
+    align-content: flex-start;
+    margin-bottom: 1vh;
 }
 
-.hero-text p {
+.robo-text p {
     width: 80%;
     text-align: justify;
-    color: #fff;
-    font-size: 2.4vmin;
 }
 
 .info {
     font-family: "Raleway", sans-serif;
-    margin: 5vh 15vh;
-    padding: 10px 20px;
-    width: 31vh;
-    border: var(--color-black-gradient) 1px solid;
-    background-color: var(--color-black-gradient);
+    margin-top: 3vh;
+    padding: 1vh 1.5vw;
+    width: 20vw;
+    background-color: var(--background-color-orange);
     border-radius: 7px;
     transition: .8s;
 }
 
+.info:hover {
+    background-color: transparent;
+    border: var(--color-grey-dark) 1px solid;
+    scale: 1.05;
+}
+
 .info p {
-    color: var(--color-grey-light);
-    font-size: 2.4vmin;
+    color: var(--color-grey-dark);
     font-weight: 700;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-}
-
-.info:hover {
-    background-color: transparent;
-    scale: 1.05;
 }
 
 .box {
@@ -145,39 +166,27 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 5%;
-    height: auto;
+    margin-left: 5vw;
     width: 50%;
     border-radius: 7px;
-    gap: 20px;
+    gap: 3vh;
+    color:  var(--color-grey-dark);
 }
 
 .box h2 {
-    color: #fff;
-    font-size: 6vmin;
     text-align: center;
     text-wrap: balance;
-    margin: 70px 30px;
+    margin: 4vh 3vw;
 }
 
 .box-content {
-    background-color: var(--color-grey-light);
+    background-color: var(--background-color-orange);
     border: 2px solid transparent;
-    color: #fff;
     text-align: justify;
     padding: 10px;
     border-radius: 7px;
     width: 80%;
     transition: .5s;
-}
-
-.box-content h3 {
-    font-size: 3vmin;
-    margin-bottom: 10px;
-}
-
-.box-content p{
-    font-size: 2.4vmin;
 }
 
 .box-content:hover {
@@ -186,17 +195,22 @@ a:hover {
     border: 2px solid var(--color-grey-dark)
 }
 
-.galeria{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: auto;
-    border: 1px solid #fff;
-    margin: 15vh 10vh;
-    padding: 5vh 5vw;
-    color: #fff;
+.box-content h3 {
+    text-align: center;
+    font-size: 3vmin;
+    margin-bottom: 10px;
 }
 
-.galeria h2{
-    font-size: 40px;
+.box-content p{
+    font-size: 2.4vmin;
+}
+
+.galeria{
+    color: var(--color-grey-dark);
+    border: 1px solid #444;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 15vh 10vh 10vh;
+    padding: 5vh 5vw;
 }

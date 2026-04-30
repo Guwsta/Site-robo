@@ -21,73 +21,71 @@
 
 <body>
     <!-- Início Header -->
-    <header class="hero-header">
+    <header class="header">
 
         <h1>BMO</h1>
         <nav>
-            <ol class="hero-menu">
+            <ul>
                 <li><a href="#go-home">Home</a></li>
+                <li><a href="#go-robo">Robô</a></li>
                 <li><a href="#go-arma">Arma</a></li>
                 <li><a href="#go-galeria">Galeria</a></li>
-            </ol>
+            </ul>
         </nav>
     </header>
     <!-- Fim Header -->
 
     <!-- Início Hero -->
-    <section class="container" id="go-home">
-        <div class="background">
-            <div class="hero-text">
-                <h2>NOSSO ROBÔ</h2>
-                <p>
-                    O BMO é um protótipo de robô funcional desenvolvido para a RoboCup da FIAP. Com chassi compacto em
-                    acrílico, estética retrô em teal neon e eletrônica embarcada,
-                    combina engenharia robusta com criatividade aplicada à competição acadêmica.
-                </p>
-                <div class="info">
-                    <p>Dimensões:</p>
-                    <p>30x30x20 cm</p>
-                </div>
-            </div>
-            <img src="./Images/robo.jpg" alt="imagem de  um robô">
-        </div>
+    <section class="hero" id="go-home">
+        <h2>BMO</h2>
+        <p>Inovamos com gestão ágil e squads multidisciplinares, criando robôs assistivos e competitivos focados em
+            impacto social e excelência técnica
+        </p>
     </section>
     <!-- Fim Hero -->
 
+    <!-- Início Container Robô -->
+    <section class="container" id="go-robo">
+        <div class="robo-text">
+            <h2>NOSSO ROBÔ</h2>
+            <p>
+                O BMO é um protótipo de robô funcional desenvolvido para a RoboCup da FIAP. Com chassi compacto que
+                combina engenharia robusta com criatividade aplicada à competição acadêmica.
+            </p>
+            <div class="info">
+                <p>Dimensões:</p>
+                <p>30x30x20 cm</p>
+            </div>
+        </div>
+        <img src="./Images/robo.jpg" alt="imagem de  um robô">
+    </section>
+    <!-- Fim Container Robô -->
+
     <!-- Início Container Arma -->
     <section class="container" id="go-arma">
-        <div class="background">
-            <img src="./Images/robo-sensor.jpg" alt="robô com sensor em direção à algum lugar">
-            <div class="box">
-                <h2>Sistema de Acionamento da Arma </h2>
-                <div class="box-content">
-                    <h3>Como funciona</h3>
-                    <p>Um motor rotativo acoplado a um braço de manivela converte o movimento angular em deslocamento
-                        linear. Ao receber o sinal de disparo, o braço empurra a haste para fora do chassi, percorrendo
-                        cerca de ~96 mm até atingir o alvo. Ao término do curso, a mola de retorno traciona a haste de
-                        volta
-                        à posição inicial em menos de 15 segundos.</p>
-                </div>
-                <div class="box-content">
-                    <h3>Modos de Acionamento</h3>
-                    <p>Sensor de contato- O disparo é ativado por sensores de contato posicionados na estrutura frontal
-                        do
-                        robô. Ao detectar toque físico com o alvo, o circuito fecha e aciona o mecanismo de avanço da
-                        haste
-                        automaticamente.</p>
-                </div>
+        <img src="./Images/robo-sensor.jpg" alt="robô com sensor em direção à algum lugar">
+        <div class="box">
+            <h2>Sistema de Acionamento da Arma </h2>
+            <div class="box-content">
+                <h3>Como funciona</h3>
+                <p>Um motor acoplado a base empurra a haste para fora do chassi, percorrendo
+                    cerca de 30cm até atingir o alvo. Antes de 15 segundos de ativação, a haste retorna para
+                    dentro do chasssi</p>
+            </div>
+            <div class="box-content">
+                <h3>Modo de Acionamento</h3>
+                <p>O disparo é ativado por sensores de contato, posicionados na parte frontal e
+                    traseira do robô. Ao detectar toque físico, o circuito aciona o mecanismo de avanço da haste.</p>
             </div>
         </div>
     </section>
     <!-- Fim Container Arma -->
 
     <!-- Início Container Galeria -->
-    <section class="container" id="go-galeria">
-        <div class="background">
-            <div class="galeria">
-                <h2>Galeria</h2>
-                
-            </div>
+    <section class="container background" id="go-galeria">
+        <div class="galeria">
+            <h2>Galeria</h2>
+
         </div>
     </section>
     <!-- Fim Container Galeria -->
