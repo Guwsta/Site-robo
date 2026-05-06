@@ -1,18 +1,22 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
 ::selection {
     background-color: #555;
-    color: #ddd;
+    color: #E9ECEF;
 }
 
 :root {
     --color-grey-dark: #444;
-    --color-font-blue: #6C757D;
+    --color-blue: #6C757D;
+    --color-blue: #6C757D;
     --background-color-orange: #FF8C42;
+    --background-color-orange-alfa: rgba(255, 138, 66, 0.3);
+    --color-light: #ddd;
 }
 
 html {
@@ -20,21 +24,18 @@ html {
 }
 
 body {
-    background-color: #e8edef;
+    background-color: #666;
     font-family: "Playfair Display", serif;
     letter-spacing: 2px;
 }
 
 h1 {
-    color: var(--color-font-blue);
-}
-
-h1:hover {
-    cursor: pointer;
+    font-size: 6vmin;
+    color: var(--color-blue);
 }
 
 h2{
-    font-size: 6vmin;
+    font-size: 5.5vmin;
 }
 
 p {
@@ -49,15 +50,15 @@ ul {
 }
 
 a {
-    color: var(--color-font-blue);
+    color: var(--color-blue);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 2.4vmin;
     font-weight: 700;
     transition: .5s;
 }
 
 a:hover {
-    color: #E9ECEF;
+    color: var(--color-light);
 }
 
 .header {
@@ -74,14 +75,14 @@ a:hover {
 
 .header ul {
     display: flex;
-    font-size: 32x;
+    font-size: 2.4vmin;
     gap: 50px;
 }
 
 .hero{
     height: 50vh;
-    background-color: #4A90E2;
-    color: #343A40;
+    background: linear-gradient(#0d1b2a,#1565c0);
+    color: var(--color-light);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -95,27 +96,25 @@ a:hover {
 
 .hero p{
     margin-top: 1vh;
-    font-size: 2.4vmin;
     width: 50%;
 }
 
 .container {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.container img {
-    height: 80%;
-    width: 40%;
+.images{
+    width: 35%;
     border-radius: 10px;
-    margin: 15vh 5vh;
+    margin: 15vh 5vw;
     transition: .5s;
     opacity: .7;
-    box-shadow: var(--color-grey-dark) 10px 10px 15px;
+    box-shadow: var(--color-light) 0 0 15px;
 }
 
-.container img:hover {
-    opacity: 1.1;
+.images:hover{
+    opacity: 1;
 }
 
 .robo-text {
@@ -125,7 +124,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:  var(--color-grey-dark);
+    color:  var(--color-light);
 }
 
 .robo-text h2 {
@@ -141,21 +140,21 @@ a:hover {
 .info {
     font-family: "Raleway", sans-serif;
     margin-top: 3vh;
-    padding: 1vh 1.5vw;
-    width: 20vw;
+    padding: 1vh 1vw;
+    min-width: 20vw;
     background-color: var(--background-color-orange);
+    border: transparent;
     border-radius: 7px;
     transition: .8s;
 }
 
 .info:hover {
-    background-color: transparent;
+    background-color: var(--background-color-orange-alfa);
     border: var(--color-grey-dark) 1px solid;
     scale: 1.05;
 }
 
 .info p {
-    color: var(--color-grey-dark);
     font-weight: 700;
     margin: 0 auto;
     display: flex;
@@ -171,7 +170,7 @@ a:hover {
     width: 50%;
     border-radius: 7px;
     gap: 3vh;
-    color:  var(--color-grey-dark);
+    color:  var(--color-light);
 }
 
 .box h2 {
@@ -192,8 +191,8 @@ a:hover {
 
 .box-content:hover {
     scale: 1.05;
-    background-color: transparent;
-    border: 2px solid var(--color-grey-dark)
+    background-color: var(--background-color-orange-alfa);
+    border: 2px solid var(--color-grey-dark);
 }
 
 .box-content h3 {
@@ -202,16 +201,61 @@ a:hover {
     margin-bottom: 10px;
 }
 
-.box-content p{
-    font-size: 2.4vmin;
+.galeria{
+    margin: 0 auto;
+    padding: 10vh 0;
+    color: var(--color-light);
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
 }
 
-.galeria{
-    color: var(--color-grey-dark);
-    border: 1px solid #444;
-    width: 100vw;
+.galeria h2{
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.galeria-img{
     display: flex;
-    justify-content: center;
-    margin: 15vh 10vh 10vh;
-    padding: 5vh 5vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 3vh 0;
+    gap: 5vh;
+}
+
+.galeria-items{
+    text-align: center;
+    width: 40%;
+    padding: 10px;
+}
+
+.galeria-items img{
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: var(--color-light) 0 0 10px;
+}
+
+.galeria-items p{
+    margin-top: 1vh;
+}
+
+.footer{
+    min-height: 10vh;
+    padding-inline: 30px;
+    background-color: var(--color-grey-dark);
+    color: var(--color-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p{
+    font-size: 1vmin;
+    margin-top: -7px;
+    margin-left: 5px;
+}
+
+.footer ul {
+    display: flex;
+    gap: 50px;
 }
